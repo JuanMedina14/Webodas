@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+
+
+/* --------------------CABECERA------------------------------- */
+
+.cabecera{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+}
+
+body{
+    background: linear-gradient(to top, rgb(0 0 0 / .2),rgb(0 0 0 / .7)),url(../img/fondo2.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    
+    
+}
+
+
+.cabecera__titulo{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    font-size: 8rem;
+    font-family: 'Dancing Script', cursive;
+    
+}
+
+.cabecera__texto{
+    position: absolute;
+    top: 20%;
+    color: #fff;
+    font-size: 3rem;
+    
+}
+
+.cabecera__fecha{
+    position: absolute;
+    top: 70%;
+    color: #fff;
+    font-size: 3rem;
+}
+
+
+
+
+/* --------------------BOTON PRIMERO------------------------------- */
+
+
+.boton--rose {
+    margin-top: 20em;
+    font-size: 1.5rem;
+    min-width: 130px;
+    color: #fff;
+    padding: 0px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    z-index: 0;
+    background: #fff;
+    overflow: hidden;
+    border: 2px solid #ed5a51;
+    color: #ed5a51;
+  }
+  .boton--rose:hover {
+    color: #fff
+  }
+  .boton--rose:hover:after {
+    height: 100%;
+  }
+  .boton--rose:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    transition: all 0.3s ease;
+    left: 0;
+    top: 0;
+    height: 0;
+    width: 100%;
+    background: #ed5a51;
+  }
+  .btn{
+    text-decoration: none;
+    color: #ed5a51;
+  }
+
+
+
+
+
+/* /////////////////CUENTA REGRESIVA::::::::::::::::::::::::::: */
+
+
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #272727;
+    text-align: center;
+}
+
+h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #ed5a51;
+
+}
+
+.back {
+    margin-bottom: 20px;
+    color: #a49fa1;
+}
+
+.countdown {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: space-between;
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+
+.countdown div {
+    padding: 15px 0;
+    text-align: center;
+    border-right: solid 2px #000;
+    background-color: #313131;
+}
+
+.countdown div:last-child {
+    border-right: none;
+}
+
+.countdown div p {
+    font-weight: 600;
+    font-size: 3rem;
+    color: #ed5a51;
+}
+
+.countdown div span {
+    color: #a49fa1;
+    font-weight: 300;
+}
+
+
+
+
+
+
+/* :::::::::::::::::::::BOTON CEREMONIA:::::::::::::: */
+
+.btn2 {
+  margin-top: 80%;
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  overflow: hidden;
+  border-radius: 5px;
+  border: none;
+  background-color: #6c757d
+}
+.btn2:hover {
+  border-radius: 5px;
+  padding-right: 24px;
+  padding-left:8px;
+}
+.btn2:hover:after {
+  opacity: 1;
+  right: 10px;
+}
+.btn2:after {
+  content: "\00BB";
+  position: absolute;
+  opacity: 0;
+  font-size: 20px;
+  line-height:37px;
+  top: 0;
+  right: -20px;
+  transition: 0.4s;
+}
+
+
+/* ::::::::::::::::::::: CEREMONIA:::::::::::::: */
+
+
+.ceremonia{
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  height: 100vh;
+  gap: 0px 20px;
+  
+}
+
+.ceremonia__item1, .ceremonia__item2{
+  width: 40%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ceremonia__icono{
+  width: 30%;
+  
+}
+
+h3{
+  font-size: 3rem;
+  font-family: 'Dancing Script', cursive;
+  color: #D88A27;
+  margin-bottom: 20px;
+}
+
+.ceremonia__text{
+  text-align: center;
+  padding: 10px 80px;
+}
+
+.ceremonia__mapa{
+  margin-top: 30px;
+  padding: 10px 20px;
+  border: #D88A27 1px solid;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px rgb(133, 133, 133);
+  transition: .5s;
+}
+
+.ceremonia__mapa:hover{
+  background-color: #D88A27;
+  color: #fff;
+  box-shadow: none;
+  
+}
+
+
+.btn3 {
+  min-width: 50px;
+  height: 40px;
+  color: #fff;
+  
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+  position: absolute;
+  top: 290%;
+  right: 50%;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  z-index: 0;
+  background: #fff;
+  overflow: hidden;
+  border: 2px solid #D88A27;
+  color: #D88A27;
+}
+.btn3:hover {
+  color: #fff;
+}
+.btn3:hover:after {
+  height: 100%;
+}
+.btn3:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  transition: all 0.3s ease;
+  left: 0;
+  top: 0;
+  height: 0;
+  width: 100%;
+  background: #D88A27;
+}
+
+
+/* ::::::::::::::::::::: GALERIA:::::::::::::: */
+
+
+  .galeria{
+    background-color: #ddc190;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .container{
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    grid-template-rows: repeat(2, 250px);
+    grid-gap: 10px;
+    
+  }
+
+  .item1 img, .item2 img, .item3 img, .item4 img, .item5 img, .item6 img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: #111111 3px 3px 3px;
+
+    transition: .5s;
+  }
+
+  .item1 img:hover, .item2 img:hover, .item3 img:hover, .item4 img:hover, .item5 img:hover, .item6 img:hover{
+    box-shadow: none;
+  }
+
+  .item1{
+    grid-row-start: span 2;
+   
+  }
+
+  .item5{
+    
+    grid-column-start: span 2;
+  }
+
+
+
+  /* ::::::::::::::::::::: REGALOS:::::::::::::: */
+
+  .regalos{
+    background-color: aliceblue;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .regalos__detalle{
+    
+    width: 50%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .regalos__img{
+    width: 20%;
+  }
+
+  .regalos_texto{
+    color: #D88A27;
+    font-size: 1.3rem;
+  }
+
+  .regalos__boton{
+    margin-top: 30px;
+    padding: 10px 20px;
+    border: #D88A27 1px solid;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgb(133, 133, 133);
+    transition: .5s;
+  }
+  
+  .regalos__boton:hover{
+    background-color: #D88A27;
+    color: #fff;
+    box-shadow: none;
+    
+  }
+
+
+   /* ::::::::::::::::::::: Confirmacion ASISTENCIA:::::::::::::: */
+
+
+   
