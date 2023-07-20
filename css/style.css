@@ -381,7 +381,7 @@ h3{
     width: 20%;
   }
 
-  .regalos_texto{
+  .regalos__texto{
     color: #D88A27;
     font-size: 1.3rem;
   }
@@ -454,4 +454,25 @@ h3{
 
 .close:hover{
   background-color: hsl(0, 0%, 35%);
+}
+
+
+
+
+
+
+.asistencia{
+  background-color: #000000;
+  opacity: .5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+h5{
+  font-size: 2rem;
+  font-family: 'Dancing Script', cursive;
 }

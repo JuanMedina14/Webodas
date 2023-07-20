@@ -108,11 +108,11 @@
 
 
 
-  <!-- /* ///////////////// REGALOS::::::::::::::::::::::::::: */ -->
+  <!-- /* ///////////////// REGALOS + MODAL::::::::::::::::::::::::::: */ -->
   <div class="regalos">
     <div class="regalos__detalle">
       <img src="./img/regalo-02.png" alt="regalos" class="regalos__img">
-      <p class="regalos_texto">Si deseás realizarnos un regalo podés colaborar con nuestra Luna de Miel...</p>
+      <p class="regalos__texto">Si deseás realizarnos un regalo podés colaborar con nuestra Luna de Miel...</p>
       <button class="regalos__boton" id="openModal">Ver datos</button>
       <div id="modal" class="modal-container">
         <div class="modal-content">
@@ -129,12 +129,32 @@
     </div>
   </div>
 
-
-  <!-- /* ///////////////// REGALOS::::::::::::::::::::::::::: */ -->
-
+  <!-- /* /////////////////FIN REGALOS::::::::::::::::::::::::::: */ -->
 
 
 
+
+  <!-- //////////////////////////ASISTENCIA FORMULARIO:::::::::::::::::::::::: -->
+  
+
+  <div class="asistencia">
+    <h5>Confirmar asistencia</h5>
+    <form action="index.php" method="POST">
+      <label for="nombre">Nombre y apellido</label>
+      <input type="text" id="nombre" name="nombre"><br>
+      <label for="invitados">cantidad de invitados</label>
+      <input type="number" id="invitados" name="invitados" placeholder="0"><br>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email"><br>
+      <label for="mensaje">Mensaje</label>
+      <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+      <input type="submit" value="enviar" name="enviar">
+    </form>
+  </div>
+
+  
+
+  <!-- LINK MODAL DATOS BANCARIOS -->
   <script src="./js/modal.js"></script>
   <!-- LINK CUENTA REGRESIVA -->
   <script src="./js/script.js"></script>
