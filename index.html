@@ -135,9 +135,9 @@
 
 
   <!-- //////////////////////////ASISTENCIA FORMULARIO:::::::::::::::::::::::: -->
-  
 
-  <div class="asistencia">
+
+  <!-- <div class="asistencia">
     <h5>Confirmar asistencia</h5>
     <form action="index.php" method="POST">
       <label for="nombre">Nombre y apellido</label>
@@ -150,9 +150,42 @@
       <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
       <input type="submit" value="enviar" name="enviar">
     </form>
-  </div>
+  </div> -->
+  <section class="contacto">
+    <h5>Confirmá tu Asistencia</h5>
 
-  
+    <form action="index.php" method="POST">
+
+      <div class="datos-form">
+        <div class="nombre">
+          <label for="nombre">Nombre/s</label>
+          <input type="text" name="nombre" id="nombre" placeholder="nombre">
+        </div>
+
+        <div class="invitados">
+          <label for="invitados">Numero de Invitados</label>
+          <input type="number" name="invitados" id="invitados" placeholder="0">
+        </div>
+      </div>
+
+      <div class="cena">
+        <label for="cena">Restricción Dietética</label>
+        <input type="text" name="cena" id="cena" placeholder="celiaco - vegano - vegetariano - alergias">
+      </div>
+
+
+      <div class="mensaje">
+        <label for="mensaje">Comentarios o Preguntas</label>
+        <textarea name="mensaje" id="mensaje" cols="30" rows="5" placeholder="Mensaje"></textarea>
+      </div>
+
+      <div class="boton-formulario">
+        <a href="#" class="boton-saber-mas">Enviar</a>
+      </div>
+    </form>
+  </section>
+
+
 
   <!-- LINK MODAL DATOS BANCARIOS -->
   <script src="./js/modal.js"></script>
@@ -161,4 +194,4 @@
 
 </body>
 
-</html> 
+</html>
