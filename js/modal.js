@@ -16,6 +16,10 @@ closeModal.onclick = function(){
 
 // cerrar en ventana , se cierra dando click fuera del modal
 
-modalCuenta.onclick = function(){
+/*modalCuenta.onclick = function(){
     modalCuenta.style.visibility = "hidden";
-}
+}*/
+
+
+
+
