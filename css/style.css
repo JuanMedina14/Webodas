@@ -330,7 +330,7 @@ h3 {
 /* ::::::::::::::::::::: REGALOS:::::::::::::: */
 
 .regalos {
-  background-color: aliceblue;
+  background-color: rgb(255, 255, 255);
   width: 100%;
   height: 300px;
   display: flex;
@@ -428,8 +428,35 @@ h3 {
 }
 
 /* ::::::::::::::::::::: Contacto  :::::::::::::: */
+.formulario{
+  background-color: #afafaf;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
 
-h5 {
+
+.formulario__img{
+  width: 5%;
+}
+
+.formulario__titulo{
+  color: #fff;
+  font-size: 2rem;
+}
+
+.formulario__texto{
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+
+
+/* ::::::::::::::::::::: FORMULARIO PARA VALIDAR CON PHP  :::::::::::::: */
+
+/* h5 {
   text-align: center;
   font-size: 2rem;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -505,13 +532,15 @@ form textarea:focus {
 .boton-formulario .boton-saber-mas:hover {
   background-color: #444444;
   color: #fff;
-}
+} */
 
 /* ::::::::::::::::::::: Footer  :::::::::::::: */
 
 .footer {
-  height: 40px;
-  text-align: center;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   padding: 10px;
@@ -545,7 +574,6 @@ form textarea:focus {
   }
 
 
-
   main{
     height: 70vh;
   }
@@ -559,6 +587,9 @@ form textarea:focus {
   .back{
     font-size: 1.5rem;
   }
+
+
+   /* ::::::::::::::::::::: Responsive CEREMONIA y FIESTA:::::::::::::: */
 
   .ceremonia{
     display: flex;
@@ -582,14 +613,18 @@ form textarea:focus {
     display: none;
   }
 
+
+  /* ::::::::::::::::::::: Responsive GRID GALERIA:::::::::::::: */
+
   .galeria{
-    height: 1500px;
+    height: 1600px;
+    
   }
 
   .container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 0px;
+    grid-gap: 10px;
     
   }
 
@@ -609,13 +644,39 @@ form textarea:focus {
     height: 250px;
     
   }
+/* ::::::::::::::::::::: FIN GRID GALERIA:::::::::::::: */
 
+  .regalos__texto{
+    text-align: center;
+  }
 
-  /* .regalos{
-    top: 55%;
-  } */
+  .regalos__img{
+    width: 40%;
+  }
 
   .footer{
     height: 80px;
   }
+}
+
+
+
+/* :::::::::::::::::::::ASISTENCIA :::::::::::::: */
+
+.formulario{
+  height: 400px;
+}
+
+.formulario__titulo{
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.formulario__img{
+  width: 20%;
+}
+
+.formulario__texto{
+  text-align: center;
+  padding: 5px 10px;
 }
