@@ -428,18 +428,20 @@ h3 {
 }
 
 /* ::::::::::::::::::::: Contacto  :::::::::::::: */
+
+
 .formulario{
   background-color: #afafaf;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 300px;
+  height: 350px;
 }
 
 
 .formulario__img{
-  width: 5%;
+  width: 6%;
 }
 
 .formulario__titulo{
@@ -548,12 +550,19 @@ form textarea:focus {
   color: #fff;
 }
 
+
+
+
+
+
+
 /* ::::::::::::::::::::: Responsive :::::::::::::: */
 
 @media screen and (max-width: 500px) {
   .cabecera__titulo {
-    font-size: 2.7rem;
-    top: 40%;
+    font-size: 4.5rem;
+    text-align: center;
+    top: 30%;
   }
 
   .cabecera__texto {
@@ -657,26 +666,26 @@ form textarea:focus {
   .footer{
     height: 80px;
   }
+
+
+  .formulario{
+    height: 400px;
+  }
+  
+  .formulario__titulo{
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .formulario__img{
+    width: 20%;
+  }
+  
+  .formulario__texto{
+    text-align: center;
+    padding: 5px 10px;
+  }
 }
 
 
-
-/* :::::::::::::::::::::ASISTENCIA :::::::::::::: */
-
-.formulario{
-  height: 400px;
-}
-
-.formulario__titulo{
-  font-size: 1.8rem;
-  text-align: center;
-}
-
-.formulario__img{
-  width: 20%;
-}
-
-.formulario__texto{
-  text-align: center;
-  padding: 5px 10px;
-}
