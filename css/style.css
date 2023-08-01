@@ -627,13 +627,14 @@ form textarea:focus {
 
   .galeria{
     height: 1600px;
+    background-color:#afafaf;
     
   }
 
   .container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 10px;
+    
     
   }
 
@@ -658,6 +659,7 @@ form textarea:focus {
   .regalos__texto{
     text-align: center;
   }
+
 
   .regalos__img{
     width: 40%;
